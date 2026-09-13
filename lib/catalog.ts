@@ -1,6 +1,9 @@
 export type Product={id:string;category:string;name:string;price:number;socket?:string;ram?:string;tdp?:number;wattage?:number;form?:string;uses:string[];retailer:string;url:string;checkedAt:string};
 const t="2026-09-13T16:45:00+05:30";
 export const products:Product[]=[
+{id:"r5600",category:"CPU",name:"AMD Ryzen 5 5600 (boxed cooler included)",price:13100,socket:"AM4",ram:"DDR4",tdp:65,uses:["gaming","coding","everyday"],retailer:"MDComputers",url:"https://mdcomputers.in/product/amd-ryzen-5-5600-desktop-processor",checkedAt:t},
+{id:"b550",category:"Motherboard",name:"MSI B550M PRO-VDH WiFi",price:10100,socket:"AM4",ram:"DDR4",form:"mATX",uses:["gaming","coding","everyday"],retailer:"MDComputers",url:"https://mdcomputers.in/product/motherboard/amd-chipset-motherboard/b550-motherboard/msi-b550m-pro-vdh-wifi-motherboard",checkedAt:t},
+{id:"ram16d4",category:"Memory",name:"Corsair Vengeance LPX 16GB (2×8GB) DDR4-3200 CL16",price:3800,ram:"DDR4",uses:["gaming","coding","everyday"],retailer:"MDComputers",url:"https://mdcomputers.in/product/corsair-vengeance-lpx-16gb-ddr4-3200mhz-cmk16gx4m2e3200c16",checkedAt:t},
 {id:"r5",category:"CPU",name:"AMD Ryzen 5 7600 (100-100001015BOX)",price:19850,socket:"AM5",ram:"DDR5",tdp:65,uses:["gaming","coding","everyday"],retailer:"MDComputers",url:"https://mdcomputers.in/product/amd-ryzen-5-7600-100-100001015box-desktop-processor",checkedAt:t},
 {id:"r7",category:"CPU",name:"AMD Ryzen 7 7700 (100-100000592BOX)",price:28500,socket:"AM5",ram:"DDR5",tdp:65,uses:["creator","coding"],retailer:"MDComputers",url:"https://mdcomputers.in/product/amd-ryzen-7-7700-100-100000592box",checkedAt:t},
 {id:"b650",category:"Motherboard",name:"MSI PRO B650M-A WiFi",price:14550,socket:"AM5",ram:"DDR5",form:"mATX",uses:["gaming","creator","coding"],retailer:"MDComputers",url:"https://mdcomputers.in/product/msi-pro-b650m-a-wifi-motherboard",checkedAt:t},

@@ -14,8 +14,9 @@ export const products:Product[]=[
 {id:"psu750",category:"Power supply",name:"Corsair RM750e 750W Gold",price:9900,wattage:750,uses:["gaming","creator","coding"],retailer:"PrimeABGB",url:pa,checkedAt:t},
 {id:"case",category:"Case",name:"DeepCool CH370 Airflow mATX",price:4700,form:"mATX",uses:["gaming","creator","coding","everyday"],retailer:"Vedant Computers",url:vd,checkedAt:t},
 {id:"cooler",category:"Cooler",name:"DeepCool AG400",price:2300,socket:"AM5",uses:["gaming","creator","coding"],retailer:"MDComputers",url:md,checkedAt:t},
-{id:"thinkbook15",category:"Laptop",name:"Lenovo ThinkBook 15 G5 21JFA02KIN · Ryzen 5 7530U · 16GB · 512GB",price:37999,uses:["everyday","coding"],retailer:"Smartprix comparison",url:"https://www.smartprix.com/laptops/price-below_40000/amd_ryzen_5-cpu",checkedAt:t},
+{id:"thinkbook15",category:"Laptop",name:"Lenovo ThinkBook 15 G5 21JFA02KIN · Ryzen 5 7530U · 16GB · 512GB",price:81360,uses:["everyday","coding"],retailer:"Flipkart",url:"https://www.flipkart.com/lenovo-thinkbook-15-g5-amd-ryzen-5-hexa-core-7530u-16-gb-512-gb-ssd-windows-11-home-thin-light-laptop/p/itmf1e454049a285",checkedAt:t},
 {id:"loq4050",category:"Laptop",name:"Lenovo LOQ 83DV007GIN · Core i5-13450HX · RTX 4050 · 16GB",price:111989,uses:["gaming","creator"],retailer:"Smartprix comparison",url:"https://www.smartprix.com/laptops/lenovo-loq-83dv007gin-gaming-laptop-13th-ppd1fvwmwkx6",checkedAt:t},
 {id:"creatorz16",category:"Laptop",name:"MSI Creator Z16 HX B13VFTO · Core i7 · RTX 4060 · 32GB · 1TB",price:234990,uses:["creator"],retailer:"Findprix comparison",url:"https://www.findprix.com/laptops/msi-creator-z16-hx-b13vfto-215in-laptop-2472",checkedAt:t},
 {id:"homeprebuilt",category:"Desktop",name:"Ryzen 5 productivity desktop · 16GB · 1TB SSD",price:57900,uses:["everyday","coding"],retailer:"MDComputers",url:md,checkedAt:t},
 {id:"gamingprebuilt",category:"Desktop",name:"Ryzen 5 gaming desktop · RX 7600 · 16GB · 1TB SSD",price:82900,uses:["gaming"],retailer:"Vedant Computers",url:vd,checkedAt:t}];
+

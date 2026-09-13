@@ -1,7 +1,7 @@
 "use client";
 import {FormEvent,useEffect,useState} from "react";
 import {Check,ChevronRight,Heart,Loader2,Maximize2,RotateCcw,Send,ShieldCheck,Sparkles,TriangleAlert} from "lucide-react";
-import Workshop3D from "../components/workshop/WorkshopLoader";
+import Workshop3D from "../components/workshop/Workshop3D";
 import type {ComponentKey} from "../components/workshop/Workshop3D";
 import {BuildHud,ComponentRail} from "../components/workshop/BuildUI";
 type Profile={budget:number;use:"gaming"|"creator"|"coding"|"everyday";kind:"custom"|"laptop"|"desktop";priority:"value"|"performance"|"upgrade"};
@@ -22,6 +22,7 @@ export default function Home(){
  <BuildHud total={rec?.total??0} selected={selected} compatible={Boolean(rec)}/>
  <section className="intelligence" id="intelligence"><div className="intel-head"><p>BUILD INTELLIGENCE</p><h2>{rec?.title??"Your engineered system will appear here."}</h2><span>{rec?money(rec.total):"AWAITING COMMAND"}</span></div>{rec?<div className="intel-grid"><div className="product-list">{rec.parts.map((x,i)=><button key={x.category+x.name} onClick={()=>setSelected(topic(x.category))}><i>{String(i+1).padStart(2,"0")}</i><span><small>{x.category} · {x.priceStatus==="live"?"LIVE PRICE":"PRICE SNAPSHOT"}</small><b>{x.name}</b><a href={x.url} target="_blank" rel="noreferrer" onClick={e=>e.stopPropagation()}>VIEW ON {x.retailer.toUpperCase()} ↗</a></span><strong>{money(x.price)}</strong></button>)}</div><div className="diagnostics"><div><ShieldCheck/><h3>COMPATIBILITY PASSED</h3>{rec.checks.map(x=><p key={x}><Check/> {x}</p>)}</div><div><TriangleAlert/><h3>ENGINEER NOTES</h3>{rec.warnings.map(x=><p key={x}>{x}</p>)}</div><footer>MARKET DATA · {new Date(rec.priceCheckedAt).toLocaleString("en-IN")} · Confirm checkout price and stock.</footer></div></div>:<div className="awaiting"><Sparkles/><p>Tell Kavi your budget and workload. The selected parts, compatibility evidence, retailer links and market status will populate here.</p></div>}</section>
  <footer className="labfoot"><span>KINDPC // INDIA</span><p>AI-assisted decisions. Rule-checked compatibility. Transparent market status.</p><button onClick={()=>{setMessages(messages.slice(0,1));setRec(null)}}><RotateCcw/> RESET WORKSHOP</button></footer></main>}
+
 
 
 

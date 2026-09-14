@@ -27,9 +27,9 @@ function effectiveProfile(profile: Profile, message: string): Profile {
   else if (/\b(editing|design|creator|video|blender)\b/.test(text)) next.use = "creator";
   else if (/\b(coding|programming|developer|ai|machine learning)\b/.test(text)) next.use = "coding";
   else if (/\b(study|student|office|everyday|browsing)\b/.test(text)) next.use = "everyday";
-  const match = text.match(/(?:₹|rs\.?\s*)?([0-9]+(?:\.[0-9]+)?)\s*(k|thousand|lakh|lac)?/i);
+  const match = text.match(/(?:₹|rs\.?\s*)?([0-9][0-9,]*(?:\.[0-9]+)?)\s*(k|thousand|lakh|lac)?/i);
   if (!match) return next;
-  let budget = Number(match[1]);
+  let budget = Number(match[1].replace(/,/g, ""));
   const unit = match[2]?.toLowerCase();
   if (unit === "k" || unit === "thousand") budget *= 1000;
   if (unit === "lakh" || unit === "lac") budget *= 100000;
